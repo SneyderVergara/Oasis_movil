@@ -1,0 +1,15 @@
+.barraNavegacion{
+    display: flex;
+    height: 140px;
+    padding-top: 30px;
+    color: white;
+}
+
+.texto_centrado{
+    color: white;
+}
+
+
+.botonesAbajo{
+    color: white;
+}

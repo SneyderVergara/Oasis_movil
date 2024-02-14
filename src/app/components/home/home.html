@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="home.css">
+
+<ActionBar title="Buenas tardes, Julia" class="barraNavegacion" backgroundColor="#FC4664">
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10" backgroundColor="#1e293b">
+  <label text="" dock="top" height="40"></label>
+  <StackLayout dock="bottom" height="60" backgroundColor="#FC4664">
+    <GridLayout columns="*, *" height="100%">
+        <Label col="0" textAlignment="center" text="&#xf007;" class="fas titul_big botonesAbajo" backgroundColor="#AA46FC"></Label>
+        <Label col="1" textAlignment="center" text="&#xf07a;" class="fas titul_big botonesAbajo" backgroundColor="#AA46FC"></Label>
+    </GridLayout>
+  </StackLayout>
+  <StackLayout dock="top">
+    <Image src="~/app/images/logoOasisBlanco.png"></Image>
+    <Label class="texto_centrado" text="¿Qué deseas hacer hoy?" height="80"></Label>
+
+    <Button text="Ver Productos" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>
+
+    <Button text="Reservar eventos" [nsRouterLink]="['/evento']" pageTransition="slide" clearHistory="true"></Button>
+
+    <Button text="Salir" (tap)="onExit()"></Button>
+  </StackLayout>
+</DockLayout>
+
