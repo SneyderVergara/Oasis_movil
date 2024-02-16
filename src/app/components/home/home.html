@@ -1,19 +1,60 @@
-<link rel="stylesheet" href="home.css">
 
-<ActionBar title="Buenas tardes, Julia" class="barraNavegacion" backgroundColor="#FC4664">
-</ActionBar>
 
-<DockLayout stretchLastChild="true" padding="10" backgroundColor="#1e293b">
+<ScrollView>
+<DockLayout stretchLastChild="true" backgroundColor="#000000">
+  <!--
   <label text="" dock="top" height="40"></label>
   <StackLayout dock="bottom" height="60" backgroundColor="#FC4664">
     <GridLayout columns="*, *" height="100%">
         <Label col="0" textAlignment="center" text="&#xf007;" class="fas titul_big botonesAbajo" backgroundColor="#AA46FC"></Label>
         <Label col="1" textAlignment="center" text="&#xf07a;" class="fas titul_big botonesAbajo" backgroundColor="#AA46FC"></Label>
     </GridLayout>
-  </StackLayout>
-  <StackLayout dock="top">
-    <Image src="~/app/images/logoOasisBlanco.png"></Image>
-    <Label class="texto_centrado" text="¿Qué deseas hacer hoy?" height="80"></Label>
+  </StackLayout> -->
+  <StackLayout padding="10">
+    <FlexboxLayout class="barraNavegacion">
+      <FlexboxLayout class="InfoUser">
+        <Image src="~/app/images/logo_user.png" class="img_user"></Image>
+        <FlexboxLayout flexDirection="column" style="margin-left: 30px;">
+          <label class="text-small Nunito" text="User name"></label>
+          <label class="text-medium Nunito" text="Eler Minton"></label>
+        </FlexboxLayout>
+      </FlexboxLayout>
+      <FlexboxLayout class="Cart">
+        <Image src="~/app/images/cart.png"></Image>
+      </FlexboxLayout>
+    </FlexboxLayout>
+
+    
+    <FlexboxLayout class="blockImages" flexDirection="column">
+      <Image class="logoOasis" src="~/app/images/logoOasisBlanco.png" width="150"></Image>
+      <Image src="~/app/images/licores.jpg"></Image>
+      <label class="butonlabelrosa" text="Hacer pedido"></label>
+    </FlexboxLayout>
+
+    <FlexboxLayout class="blockImages" flexDirection="column">
+      <Image src="~/app/images/halloween.jpg"></Image>
+      <label class="butonlabelmorado" text="Reservar Evento"></label>
+    </FlexboxLayout>
+
+
+    <Label class="texto_centrado" text="Nuestro Menú!"></Label>
+    <FlexboxLayout class="blockProductos" flexDirection="column">
+      <FlexboxLayout class="blockCategorias">
+        <label class="butonlabelgris" text="Cocteles"></label>
+        <label class="butonlabelgris" text="Licores"></label>
+        <label class="butonlabelgris" text="Comidas"></label>
+        <label class="butonlabelgris" text="Aperitivos"></label>
+      </FlexboxLayout>
+      <FlexboxLayout>
+        <FlexboxLayout class="cardProductos" flexDirection="column">
+          <Image src="~/app/images/coctel1.png"></Image>
+        </FlexboxLayout>
+      </FlexboxLayout>
+    </FlexboxLayout>
+
+    <Button text="Iniciar Sesión" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>
+
+    <Button text="Registrarse" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>
 
     <Button text="Ver Productos" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>
 
@@ -22,4 +63,5 @@
     <Button text="Salir" (tap)="onExit()"></Button>
   </StackLayout>
 </DockLayout>
+</ScrollView>
 

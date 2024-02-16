@@ -4,9 +4,59 @@
 /* Place any CSS rules you want to apply on both iOS and Android here.
 This is where the vast majority of your CSS code goes. */
 
+#LETRAS
+
+.Nunito {
+    font-family: "Nunito", "Nunito-Medium";
+}
+
+
+.text-small{
+    font-size: 12px;
+}
+
+.text-medium{
+    font-size: 22px;
+}
+
+
 .texto_centrado{
     text-align: center;
     font-size: 16px;
+}
+
+.butonlabelrosa{
+    margin-top: 20;
+    text-align: center;
+    height: 45;
+    width: 200;
+    background-color: #fc4664;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
+}
+
+.butonlabelmorado{
+    margin-top: 20;
+    text-align: center;
+    height: 45;
+    width: 200;
+    background-color: #aa46fc;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
+}
+
+.butonlabelgris{
+    text-align: center;
+    height: 35;
+    padding-left: 10;
+    padding-right: 10;
+    width: auto;
+    background-color: #262626;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
 }
 
 .far {
