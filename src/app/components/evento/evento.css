@@ -1,0 +1,45 @@
+.blockEventos{
+    margin-left: 15;
+    margin-right: 15;
+}
+
+.cardEventos{
+    background-color: #262626;
+    border-radius: 20;
+    margin-bottom: 20;
+}
+
+.cardEventos .Info{
+    margin: 15;
+    margin-bottom: 15;
+}
+
+.Info .titulo{
+    font-size: 19;
+    white-space: normal;
+    margin-bottom: 5;
+}
+
+.Info #calendario{
+    background-color: transparent;
+    color: #fc4664;
+    font-size: small;
+    margin-right: 8;
+}
+
+.Info .fecha{
+    color: #fc4664;
+    font-size: 14;
+}
+
+.Imagen_Evento{
+    padding: 15;
+}
+
+.Imagen_Evento Image{
+    border-radius: 10;
+}
+
+.botonvermas{
+    justify-content: center;
+}

@@ -5,7 +5,7 @@ import { LoginComponent } from "./components/login/login";
 import { PerfilComponent } from "./components/perfil/perfil";
 
 export const appRoutes: any = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'evento', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
   { path: "tienda", component: TiendaComponent },
   { path: "evento", component: EventoComponent },

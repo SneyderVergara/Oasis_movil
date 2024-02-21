@@ -1,42 +1,8 @@
-
-
-.barraNavegacion{
-    display: flex;
-    height: 180px;
-    width: 100%;
-    color: white;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 60px;
-    background-color:#000000;
-    align-items: center;
-    font-family: 'Nunito';
-    font-weight: 700;
-}
-
-.img_user{
-    width: 140px;
-}
-
-.InfoUser{
-    display: flex;
-    width: 85%;
-}
-
-
-
-.Cart{
-    width: 15%;
-}
-
-.Cart Image{
-    width: 80px;
-}
-
 .blockImages {
     justify-content: center;
     align-items: center;
+    padding-left: 20;
+    padding-right: 20;
 }
 
 .logoOasis{
@@ -44,8 +10,6 @@
 }
 .blockImages image{
     border-radius: 20%;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .texto_centrado{
@@ -61,8 +25,10 @@
     background-image: url("~/app/images/fondo_ola.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 30px;
-    margin-right: 30px;
+    height: auto;
+    padding-bottom: 20;
+    border-bottom-left-radius: 10;
+    border-bottom-right-radius: 10;
 }
 
 
@@ -74,14 +40,87 @@
 .cardProductos{
     margin-left: 5;
     width: 100;
-    height: 120;
+    height: 150;
     background-color: #262626;
+    border-radius: 25%;
 }
 
 .cardProductos Image{
     stretch: fill;
+    height: 120;
+    border-radius: 25%;
 }
 
+.cardProductos label{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
 
+.blockBoton{
+    justify-content: center;
+}
 
+.blockGaleria{
+    margin-bottom: 50;
+    padding-left: 10;
+    padding-right: 10;
+}
 
+.cardGaleria{
+    margin-top: 20;
+    margin-right: 20;
+    width: 220;
+    height: 180;
+    border-radius: 25%;
+}
+
+.cardGaleria Image{
+    stretch: fill;
+    border-radius: 10;
+    height: 150;
+}
+
+.cardGaleria label{
+    margin-top: 5;
+    font-size: 14;
+}
+
+.blockInfo{
+    background-image: url("~/app/images/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 25;
+}
+.Text-Info{
+    font-size: 22;
+    margin-left: 8;
+    margin-bottom: 12;
+    margin-top: 6;
+}
+
+.cardInfo{
+    margin-left: 5;
+    width: 200;
+    height: 250;
+    margin-right: 20;
+    background-color: #262626;
+    border-radius: 25%;
+}
+
+.cardInfo Image{
+    stretch: fill;
+    height: 130;
+    border-radius: 25%;
+}
+
+.cardInfo label{
+    color: white;
+    margin-top: 4;
+    margin-left: 10;
+    margin-bottom: 8;
+    padding-left: 6;
+    font-size: 15;
+    white-space: normal
+}

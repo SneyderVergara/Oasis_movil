@@ -3,6 +3,7 @@ import { Router } from "@angular/router";
 import { exit } from "nativescript-exit";
 import { Page, TextField } from '@nativescript/core';
 
+
 @Component({
   selector: 'home',
   templateUrl: './home.html',
@@ -19,6 +20,10 @@ export class HomeComponent {
 
   public onExit(): void {
     exit(); // will close application
+  }
+
+  onReserva() {
+    this.router.navigate(['evento'])
   }
 }
 

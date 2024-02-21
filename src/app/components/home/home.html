@@ -1,7 +1,7 @@
 
 
 <ScrollView>
-<DockLayout stretchLastChild="true" backgroundColor="#000000">
+<DockLayout backgroundColor="#000000">
   <!--
   <label text="" dock="top" height="40"></label>
   <StackLayout dock="bottom" height="60" backgroundColor="#FC4664">
@@ -10,7 +10,7 @@
         <Label col="1" textAlignment="center" text="&#xf07a;" class="fas titul_big botonesAbajo" backgroundColor="#AA46FC"></Label>
     </GridLayout>
   </StackLayout> -->
-  <StackLayout padding="10">
+  <StackLayout>
     <FlexboxLayout class="barraNavegacion">
       <FlexboxLayout class="InfoUser">
         <Image src="~/app/images/logo_user.png" class="img_user"></Image>
@@ -33,11 +33,11 @@
 
     <FlexboxLayout class="blockImages" flexDirection="column">
       <Image src="~/app/images/halloween.jpg"></Image>
-      <label class="butonlabelmorado" text="Reservar Evento"></label>
+      <label class="butonlabelmorado" (tap)="onReserva()" text="Reservar Evento"></label>
     </FlexboxLayout>
 
 
-    <Label class="texto_centrado" text="Nuestro Menú!"></Label>
+    <Label class="texto_centrado" text="¡Nuestro Menú!"></Label>
     <FlexboxLayout class="blockProductos" flexDirection="column">
       <FlexboxLayout class="blockCategorias">
         <label class="butonlabelgris" text="Cocteles"></label>
@@ -45,11 +45,75 @@
         <label class="butonlabelgris" text="Comidas"></label>
         <label class="butonlabelgris" text="Aperitivos"></label>
       </FlexboxLayout>
-      <FlexboxLayout>
-        <FlexboxLayout class="cardProductos" flexDirection="column">
-          <Image src="~/app/images/coctel1.png"></Image>
+      <ScrollView orientation="horizontal">
+        <FlexboxLayout>
+            <FlexboxLayout class="cardProductos" flexDirection="column">
+              <Image src="~/app/images/coctel1.png"></Image>
+              <label class="Nunito" text="Flower Power"></label>
+            </FlexboxLayout>
+            <FlexboxLayout class="cardProductos" flexDirection="column">
+              <Image src="~/app/images/coctel2.jpg"></Image>
+              <label class="Nunito" text="Lemon Coctel"></label>
+            </FlexboxLayout>
+            <FlexboxLayout class="cardProductos" flexDirection="column">
+              <Image src="~/app/images/coctel3.jpg"></Image>
+              <label class="Nunito" text="Sky Blue"></label>
+            </FlexboxLayout>
+            <FlexboxLayout class="cardProductos" flexDirection="column">
+              <Image src="~/app/images/coctel3.jpg"></Image>
+              <label class="Nunito" text="Sky Blue"></label>
+            </FlexboxLayout>
+            <FlexboxLayout class="cardProductos" flexDirection="column">
+              <Image src="~/app/images/coctel3.jpg"></Image>
+              <label class="Nunito" text="Sky Blue"></label>
+            </FlexboxLayout>
+        </FlexboxLayout>
+      </ScrollView>
+    </FlexboxLayout>
+    <FlexboxLayout class="blockBoton">
+      <label class="butonlabelmorado" text="Ver menú"></label>
+    </FlexboxLayout>
+
+    <FlexboxLayout class="rayaIntermedia"></FlexboxLayout>
+
+    <Label class="texto_centrado" text="Galería"></Label>
+    <ScrollView orientation="horizontal">
+      <FlexboxLayout class="blockGaleria">
+        <FlexboxLayout class="cardGaleria" flexDirection="column">
+          <Image src="~/app/images/galeria1.jpg"></Image>
+          <label class="Nunito" text="Noche de amigos"></label>
+        </FlexboxLayout>
+        <FlexboxLayout class="cardGaleria" flexDirection="column">
+          <Image src="~/app/images/galeria2.jpg"></Image>
+          <label class="Nunito" text="Noche de vinos"></label>
+        </FlexboxLayout>
+        <FlexboxLayout class="cardGaleria" flexDirection="column">
+          <Image src="~/app/images/galeria3.jpg"></Image>
+          <label class="Nunito" text="Halloween 2022"></label>
         </FlexboxLayout>
       </FlexboxLayout>
+    </ScrollView>
+
+    <FlexboxLayout class="blockInfo" flexDirection="column">
+      <Label class="Text-Info Nunito" text="Conoce más de Oasis"></Label>
+      <ScrollView orientation="horizontal">
+        <FlexboxLayout>
+          <FlexboxLayout class="cardInfo" flexDirection="column">
+            <Image src="~/app/images/ubicacion.png"></Image>
+            <label class="Nunito" text="Nuestra Ubicación"></label>
+            <label class="butonIr" text="📍 Ir"></label>
+          </FlexboxLayout>
+          <FlexboxLayout class="cardInfo" flexDirection="column">
+            <Image src="~/app/images/local_bar.jpg"></Image>
+            <label class="Nunito" text="¡Ahora puedes reservar tus eventos VIP!"></label>
+            <label class="butonIr" text="📆 Reservar ahora"></label>
+          </FlexboxLayout>
+          <FlexboxLayout class="cardInfo" flexDirection="column">
+            <Image src="~/app/images/terraza.jpg"></Image>
+            <label class="Nunito" text="Contamos con una nueva Terraza"></label>
+          </FlexboxLayout>
+        </FlexboxLayout>
+      </ScrollView>
     </FlexboxLayout>
 
     <Button text="Iniciar Sesión" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>
@@ -64,4 +128,3 @@
   </StackLayout>
 </DockLayout>
 </ScrollView>
-

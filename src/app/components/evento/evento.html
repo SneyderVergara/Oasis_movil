@@ -1,10 +1,69 @@
-<ActionBar>
-    <Label text="Eventos"></Label>
-    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
-</ActionBar>
+<ScrollView>
+    <DockLayout backgroundColor="#000000">
+        <StackLayout>
+            <FlexboxLayout class="barraNavegacion2">
+                <FlexboxLayout class="InfoUser2">
+                <label class="fas" id="flecha_devolver" text="&#xf053;" (tap)="onTap()"></label>
+                <label class="Nunito text-medium">Eventos</label>
+                </FlexboxLayout>
+                <FlexboxLayout class="Cart">
+                <Image src="~/app/images/cart.png"></Image>
+                </FlexboxLayout>
+            </FlexboxLayout>
 
-
-<StackLayout backgroundColor="#DAF7A6">
-    <Label text='Eventos:'></Label>
-    <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
-</StackLayout>
+            <FlexboxLayout class="blockEventos" flexDirection="column">
+                <FlexboxLayout class="cardEventos" flexDirection="column">
+                    <FlexboxLayout class="Info" flexDirection="column">
+                        <label class="Nunito titulo" text="Celebración del día de muertos"></label>
+                        <FlexboxLayout>
+                            <label class="far" id="calendario" text="&#xf133;"></label>
+                            <label class="Nunito fecha" text="20 noviembre 2023"></label>
+                        </FlexboxLayout>
+                    </FlexboxLayout> 
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="Imagen_Evento">
+                        <Image src="~/app/images/Dia_muertos.png"></Image>
+                    </FlexboxLayout>
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="botonvermas">
+                        <label class="butonlabelrosa" text="Ver más"></label>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+                <FlexboxLayout class="cardEventos" flexDirection="column">
+                    <FlexboxLayout class="Info" flexDirection="column">
+                        <label class="Nunito titulo" text="Noche de Halloween"></label>
+                        <FlexboxLayout>
+                            <label class="far" id="calendario" text="&#xf133;"></label>
+                            <label class="Nunito fecha" text="30 Octubre 2023"></label>
+                        </FlexboxLayout>
+                    </FlexboxLayout> 
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="Imagen_Evento">
+                        <Image src="~/app/images/halloween.jpg"></Image>
+                    </FlexboxLayout>
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="botonvermas">
+                        <label class="butonlabelrosa" text="Ver más"></label>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+                <FlexboxLayout class="cardEventos" flexDirection="column">
+                    <FlexboxLayout class="Info" flexDirection="column">
+                        <label class="Nunito titulo" text="Celebración del día de muertos"></label>
+                        <FlexboxLayout>
+                            <label class="far" id="calendario" text="&#xf133;"></label>
+                            <label class="Nunito fecha" text="20 noviembre 2023"></label>
+                        </FlexboxLayout>
+                    </FlexboxLayout> 
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="Imagen_Evento">
+                        <Image src="~/app/images/Dia_muertos.png"></Image>
+                    </FlexboxLayout>
+                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
+                    <FlexboxLayout class="botonvermas">
+                        <label class="butonlabelrosa" text="Ver más"></label>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+            </FlexboxLayout>
+        </StackLayout>
+    </DockLayout>
+</ScrollView>

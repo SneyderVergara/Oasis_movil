@@ -25,6 +25,66 @@ This is where the vast majority of your CSS code goes. */
     font-size: 16px;
 }
 
+.barraNavegacion{
+    display: flex;
+    height: 180px;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+    background-color:#000000;
+    align-items: center;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.barraNavegacion2{
+    display: flex;
+    height: 180px;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-bottom: 10;
+    padding-right: 30px;
+    background-color:#000000;
+    align-items: center;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.img_user{
+    width: 60;
+}
+
+.InfoUser{
+    display: flex;
+    width: 85%;
+}
+
+.InfoUser2{
+    display: flex;
+    width: 85%;
+}
+
+.InfoUser2 label{
+    margin-left: 15;
+}
+
+.Cart{
+    width: 15%;
+}
+
+.Cart Image{
+    width: 80px;
+}
+
+#flecha_devolver{
+    background-color: #000000;
+    color: white;
+}
 .butonlabelrosa{
     margin-top: 20;
     text-align: center;
@@ -36,11 +96,22 @@ This is where the vast majority of your CSS code goes. */
     margin-bottom: 30;
 }
 
+
 .butonlabelmorado{
     margin-top: 20;
     text-align: center;
     height: 45;
     width: 200;
+    background-color: #aa46fc;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
+}
+
+.butonIr{
+    height: 30;
+    width: 20;
+    margin-right: 60;
     background-color: #aa46fc;
     color: white;
     border-radius: 20;
@@ -58,10 +129,23 @@ This is where the vast majority of your CSS code goes. */
     border-radius: 20;
     margin-bottom: 30;
 }
-
+.rayaIntermedia{
+    height: 1.9;
+    width: auto;
+    background-color: #262626;
+    border-radius: 30;
+    margin-left: 10;
+    margin-right: 10;
+}
+.rayaIntermedia2{
+    height: 1.5;
+    width: 100%;
+    background-color: #B7B7B7;
+    border-radius: 30;
+}
 .far {
     font-family: "Font Awesome 5 Free", "fa-regular-400";
-    font-weight: 400;
+    font-weight: 200;
     font-size: 30px;
     background-color: white;
 }
