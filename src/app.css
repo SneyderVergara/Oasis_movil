@@ -10,6 +10,10 @@ This is where the vast majority of your CSS code goes. */
     font-family: "Nunito", "Nunito-Medium";
 }
 
+.Cabin {
+    font-family: "Cabin", "Cabin-Medium";
+}
+
 
 .text-small{
     font-size: 12px;
@@ -91,6 +95,7 @@ This is where the vast majority of your CSS code goes. */
     height: 45;
     width: 200;
     background-color: #fc4664;
+    font-size: 13;
     color: white;
     border-radius: 20;
     margin-bottom: 30;
@@ -102,6 +107,7 @@ This is where the vast majority of your CSS code goes. */
     text-align: center;
     height: 45;
     width: 200;
+    font-size: 13;
     background-color: #aa46fc;
     color: white;
     border-radius: 20;
@@ -111,7 +117,7 @@ This is where the vast majority of your CSS code goes. */
 .butonIr{
     height: 30;
     width: 20;
-    margin-right: 60;
+    margin-right: 50;
     background-color: #aa46fc;
     color: white;
     border-radius: 20;
@@ -142,6 +148,16 @@ This is where the vast majority of your CSS code goes. */
     width: 100%;
     background-color: #B7B7B7;
     border-radius: 30;
+}
+#calendario{
+    background-color: transparent;
+    color: #fc4664;
+    font-size: small;
+    margin-right: 8;
+}
+.fecha{
+    color: #fc4664;
+    font-size: 14;
 }
 .far {
     font-family: "Font Awesome 5 Free", "fa-regular-400";

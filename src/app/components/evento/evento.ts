@@ -17,4 +17,7 @@ export class EventoComponent {
   public onTap(){
     this.router.navigate(["home"]);
   }
+  public onVerMas() {
+    this.router.navigate(["info_evento"]);
+  }
 }

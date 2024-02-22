@@ -20,18 +20,6 @@
     margin-bottom: 5;
 }
 
-.Info #calendario{
-    background-color: transparent;
-    color: #fc4664;
-    font-size: small;
-    margin-right: 8;
-}
-
-.Info .fecha{
-    color: #fc4664;
-    font-size: 14;
-}
-
 .Imagen_Evento{
     padding: 15;
 }
