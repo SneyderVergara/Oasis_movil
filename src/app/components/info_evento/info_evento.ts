@@ -17,4 +17,7 @@ export class InfoEventoComponent {
   public onTap(){
     this.router.navigate(["evento"]);
   }
+  public onCarrito(){
+    this.router.navigate(["evento_carrito"]);
+  }
 }

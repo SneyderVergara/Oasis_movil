@@ -13,8 +13,10 @@
 
             <FlexboxLayout class="blockEvento" flexDirection="column">
                 <GridLayout rows="auto, auto">
-                    <Image src="~/app/images/licores.jpg" row="0" borderRadius="10"></Image>
-                    <Image src="~/app/images/cart_purple2.png" row="0" width="45" height="41" horizontalAlignment="right" verticalAlignment="top" margin="10" borderRadius="100"></Image>
+                    <Image src="~/app/images/Dia_muertos.png" row="0" borderRadius="10"></Image>
+                    <!--
+                        <Image src="~/app/images/cart_purple2.png" row="0" width="45" height="41" horizontalAlignment="right" verticalAlignment="top" margin="10" borderRadius="100"></Image>
+                    -->
                 </GridLayout>
                 <FlexboxLayout class="Info_Evento" flexDirection="column">
                     <label class="Cabin titulo" text="Celebración del día de muertos" fontSize="20" whiteSpace="normal"></label>
@@ -44,14 +46,14 @@
                                 <label class="Cabin" text="Coctel Calaca Cosmo"></label>
                             </FlexboxLayout>
                             <FlexboxLayout class="cardEspeciales" flexDirection="column" marginRight="10">
-                                <Image src="~/app/images/tacos.png"></Image>
-                                <label class="Cabin" text="Tacos"></label>
+                                <Image src="~/app/images/coctel5.png"></Image>
+                                <label class="Cabin" text="Arteria Coctel"></label>
                             </FlexboxLayout>
                         </FlexboxLayout>
                     </ScrollView>
                     <FlexboxLayout class="rayaIntermedia"></FlexboxLayout>
                     <FlexboxLayout alignItems="center" justifyContent="center" marginTop="15">
-                        <label class="butonlabelmorado Cabin" text="Agregar al carrito"></label>
+                        <label class="butonlabelmorado Cabin" (tap)="onCarrito()" text="Agregar al carrito"></label>
                     </FlexboxLayout>
                 </FlexboxLayout> 
             </FlexboxLayout>
