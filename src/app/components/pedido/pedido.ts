@@ -3,11 +3,11 @@ import { Router } from "@angular/router";
 import { Page, TextField } from '@nativescript/core';
 
 @Component({
-  selector: 'login',
-  templateUrl: './login.html',
-  styleUrls:["./login.css"]
+  selector: 'pedido',
+  templateUrl: './pedido.html',
+  styleUrls: ['./pedido.css'],
 })
-export class LoginComponent {
+export class PedidoComponent {
   public constructor(private router: Router, private page: Page) {
     // Use the component constructor to inject providers.
   }
@@ -15,12 +15,6 @@ export class LoginComponent {
     this.page.actionBarHidden = true;
   }
   public onTap(){
-    this.router.navigate(["home"])
-  }
-  public onIniciarSesion(){
-    this.router.navigate(["home"])
-  }
-  public onRegistrarse(){
-    this.router.navigate(["registro"])
+    this.router.navigate(["qr_mesa"]);
   }
 }

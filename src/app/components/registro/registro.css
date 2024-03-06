@@ -1,0 +1,14 @@
+.formulario{
+    margin-top: 50;
+    margin-left: 15;
+    margin-right: 15;
+    justify-content: center;
+}
+
+.input-field{
+    width: 100%;
+}
+
+#rayaIntermedia2 {
+    padding: 0 50 0 50;
+}

@@ -1,0 +1,146 @@
+<ScrollView>
+    <DockLayout backgroundColor="#000000">
+        <StackLayout>
+            <FlexboxLayout class="barraNavegacion2">
+                <FlexboxLayout class="InfoUser2">
+                <label class="fas" id="flecha_devolver" text="&#xf053;" (tap)="onTap()"></label>
+                <label class="Nunito text-medium">Realizar Pedido</label>
+                </FlexboxLayout>
+                <FlexboxLayout class="Cart">
+                <Image src="~/app/images/cart.png"></Image>
+                </FlexboxLayout>
+            </FlexboxLayout>
+
+            <FlexboxLayout flexDirection="column" marginLeft="15" marginRight="15">
+                <FlexboxLayout class="contenedorMesa">
+                    <label class="Cabin mesa" text="Mesa 3"></label>
+                </FlexboxLayout>
+                <FlexboxLayout flexDirection="column" class="infoPedido">
+                    <FlexboxLayout justifyContent="center">
+                        <label class="Cabin" text="Cliente: Eler Milton"></label>
+                    </FlexboxLayout>
+                    <label class="Cabin" text="x2 Blue Moon"></label>
+                    <label class="Cabin" text="x1 Flower Power"></label>
+                    <label class="Cabin" text="x3 Tacos"></label>
+                </FlexboxLayout>
+                <FlexboxLayout flexDirection="column">                    
+                    <TextView class="Cabin" textWrap="true" v-model="textFieldValue" fontSize="14" hint="Agregar un comentario..."/>
+                </FlexboxLayout>
+
+                <label class="butonlabelrosa Cabin" text="Hacer pedido"></label>
+
+                <FlexboxLayout flexDirection="column" justifyContent="space-between" class="cardProductoSeleccionado">                    
+                    <FlexboxLayout class="info_producto" flexDirextion="column">
+                        <FlexboxLayout class="fotoeinfo">
+                            <Image src="~/app/images/coctel3.jpg" class="img_producto"></Image>
+                            <FlexboxLayout flexDirection="column">
+                                <label class="Cabin" fontSize="18" text="Blue Moon"></label>
+                                <label class="Cabin" fontSize="16" text="Precio: 40.000"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="botones_agregar">
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelrojo" fontSize="20" fontWeight="bold" text="-"></label>
+                            </FlexboxLayout>
+                            <label class="Cabin" fontSize="20" text="2"></label>
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelverde" fontSize="20" fontWeight="bold" text="+"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+
+
+                <FlexboxLayout flexDirection="column" justifyContent="space-between" class="cardProducto">                    
+                    <FlexboxLayout class="info_producto" flexDirextion="column">
+                        <FlexboxLayout class="fotoeinfo">
+                            <Image src="~/app/images/coctel1.png" class="img_producto"></Image>
+                            <FlexboxLayout flexDirection="column">
+                                <label class="Cabin" fontSize="18" text="Red Dragon"></label>
+                                <label class="Cabin" fontSize="16" text="Precio: 40.000"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="botones_agregar">
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelrojo" fontSize="20" fontWeight="bold" text="-"></label>
+                            </FlexboxLayout>
+                            <label class="Cabin" fontSize="20" text="0"></label>
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelverde" fontSize="20" fontWeight="bold" text="+"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+
+                <FlexboxLayout flexDirection="column" justifyContent="space-between" class="cardProductoSeleccionado">                    
+                    <FlexboxLayout class="info_producto" flexDirextion="column">
+                        <FlexboxLayout class="fotoeinfo">
+                            <Image src="~/app/images/coctel6.jpg" class="img_producto"></Image>
+                            <FlexboxLayout flexDirection="column">
+                                <label class="Cabin" fontSize="18" text="Flower Power"></label>
+                                <label class="Cabin" fontSize="16" text="Precio: 40.000"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="botones_agregar">
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelrojo" fontSize="20" fontWeight="bold" text="-"></label>
+                            </FlexboxLayout>
+                            <label class="Cabin" fontSize="20" text="1"></label>
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelverde" fontSize="20" fontWeight="bold" text="+"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+
+
+
+                <FlexboxLayout flexDirection="column" justifyContent="space-between" class="cardProductoSeleccionado">                    
+                    <FlexboxLayout class="info_producto" flexDirextion="column">
+                        <FlexboxLayout class="fotoeinfo">
+                            <Image src="~/app/images/tacos.png" class="img_producto"></Image>
+                            <FlexboxLayout flexDirection="column">
+                                <label class="Cabin" fontSize="18" text="Tacos"></label>
+                                <label class="Cabin" fontSize="16" text="Precio: 40.000"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="botones_agregar">
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelrojo" fontSize="20" fontWeight="bold" text="-"></label>
+                            </FlexboxLayout>
+                            <label class="Cabin" fontSize="20" text="3"></label>
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelverde" fontSize="20" fontWeight="bold" text="+"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+
+
+
+                <FlexboxLayout flexDirection="column" justifyContent="space-between" class="cardProducto">                    
+                    <FlexboxLayout class="info_producto" flexDirextion="column">
+                        <FlexboxLayout class="fotoeinfo">
+                            <Image src="~/app/images/garrafaTapaAzul.jpg" class="img_producto"></Image>
+                            <FlexboxLayout class="informacion" flexDirection="column">
+                                <label class="Cabin" fontSize="18" text="Garrafa Tapa Azul"></label>
+                                <label class="Cabin" fontSize="16" text="Precio: 40.000"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="botones_agregar">
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelrojo" fontSize="20" fontWeight="bold" text="-"></label>
+                            </FlexboxLayout>
+                            <label class="Cabin" fontSize="20" text="2"></label>
+                            <FlexboxLayout class="icon_menos" justifyContent="center">
+                                <label class="butonlabelverde" fontSize="20" fontWeight="bold" text="+"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </FlexboxLayout>
+                </FlexboxLayout>
+                
+
+            </FlexboxLayout>
+        </StackLayout>
+    </DockLayout>
+</ScrollView>

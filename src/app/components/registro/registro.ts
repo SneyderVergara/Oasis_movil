@@ -3,11 +3,11 @@ import { Router } from "@angular/router";
 import { Page, TextField } from '@nativescript/core';
 
 @Component({
-  selector: 'login',
-  templateUrl: './login.html',
-  styleUrls:["./login.css"]
+  selector: 'registro',
+  templateUrl: './registro.html',
+  styleUrls:["./registro.css"]
 })
-export class LoginComponent {
+export class RegistroComponent {
   public constructor(private router: Router, private page: Page) {
     // Use the component constructor to inject providers.
   }
@@ -17,10 +17,7 @@ export class LoginComponent {
   public onTap(){
     this.router.navigate(["home"])
   }
-  public onIniciarSesion(){
+  public onCrearCuenta(){
     this.router.navigate(["home"])
-  }
-  public onRegistrarse(){
-    this.router.navigate(["registro"])
   }
 }

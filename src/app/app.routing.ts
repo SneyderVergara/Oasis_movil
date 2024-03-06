@@ -5,10 +5,13 @@ import { InfoEventoComponent } from "./components/info_evento/info_evento";
 import { EventoCarritoComponent } from "./components/evento_agregar_carrito/evento_carrito";
 import { LoginComponent } from "./components/login/login";
 import { PerfilComponent } from "./components/perfil/perfil";
+import { QrMesaComponent } from "./components/qr_mesa/qr_mesa";
+import { PedidoComponent } from "./components/pedido/pedido";
+import { RegistroComponent } from "./components/registro/registro";
 
 
 export const appRoutes: any = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
   { path: "tienda", component: TiendaComponent },
   { path: "evento", component: EventoComponent },
@@ -16,6 +19,9 @@ export const appRoutes: any = [
   { path: "evento_carrito", component: EventoCarritoComponent },
   { path: "login", component: LoginComponent },
   { path: "perfil", component: PerfilComponent },
+  { path: "qr_mesa", component: QrMesaComponent},
+  { path: "pedido", component: PedidoComponent},
+  { path: "registro", component: RegistroComponent},
 ];
 
 export const appComponents: any = [
@@ -26,4 +32,7 @@ export const appComponents: any = [
   EventoCarritoComponent,
   LoginComponent,
   PerfilComponent,
+  QrMesaComponent,
+  PedidoComponent,
+  RegistroComponent,
 ];

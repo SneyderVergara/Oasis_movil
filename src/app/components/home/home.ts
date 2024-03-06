@@ -25,5 +25,8 @@ export class HomeComponent {
   onReserva() {
     this.router.navigate(['evento'])
   }
+  onQrMesa(){
+    this.router.navigate(['qr_mesa'])
+  }
 }
 

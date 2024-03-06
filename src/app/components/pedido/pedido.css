@@ -1,0 +1,60 @@
+.blockEventos{
+    margin-left: 15;
+    margin-right: 15;
+}
+.contenedorMesa{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mesa{
+    color: #fc4664;
+    font-size: 35;
+}
+.infoPedido{
+    margin-top: 10;
+    padding: 10, 10, 10, 15;
+    background-color: rgb(68, 68, 68);
+    border-radius: 20;
+    font-size: 16;
+}
+.cardProducto{
+    background-color: rgb(124, 123, 123);
+    padding: 10, 10;
+    border-radius: 20;
+    margin-bottom: 10;
+    height: auto;
+}
+.cardProductoSeleccionado{
+    background-color: #9975b6;
+    padding: 10, 10;
+    border-radius: 20;
+    margin-bottom: 10;
+    height: auto;
+}
+.img_producto{
+    width: 70;
+    height: 70;
+    border-radius: 20;
+    stretch: fill;
+    margin-right: 5;
+}
+.icon_menos{
+    width: 40;
+    border-radius: 100%;
+}
+
+.info_producto{
+    justify-content: space-between;
+}
+.fotoeinfo{
+    width: 180;
+    justify-content: flex-start;
+}
+.informacion label{
+    white-space: normal;
+}
+.botones_agregar{
+    justify-content: space-between;
+    width: 120;
+}

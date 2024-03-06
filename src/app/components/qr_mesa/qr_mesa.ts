@@ -3,11 +3,10 @@ import { Router } from "@angular/router";
 import { Page, TextField } from '@nativescript/core';
 
 @Component({
-  selector: 'login',
-  templateUrl: './login.html',
-  styleUrls:["./login.css"]
+  selector: 'qr_mesa',
+  templateUrl: './qr_mesa.html',
 })
-export class LoginComponent {
+export class QrMesaComponent {
   public constructor(private router: Router, private page: Page) {
     // Use the component constructor to inject providers.
   }
@@ -15,12 +14,9 @@ export class LoginComponent {
     this.page.actionBarHidden = true;
   }
   public onTap(){
-    this.router.navigate(["home"])
+    this.router.navigate(["home"]);
   }
-  public onIniciarSesion(){
-    this.router.navigate(["home"])
-  }
-  public onRegistrarse(){
-    this.router.navigate(["registro"])
+  public onEscaneado(){
+    this.router.navigate(["pedido"]);
   }
 }

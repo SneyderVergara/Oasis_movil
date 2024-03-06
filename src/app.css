@@ -29,6 +29,16 @@ This is where the vast majority of your CSS code goes. */
     font-size: 16px;
 }
 
+.textAlignCenter{
+    text-align: center;
+    white-space: normal;
+}
+
+.textAlignEnd{
+    text-align: right;
+    white-space: normal;
+}
+
 .barraNavegacion{
     display: flex;
     height: 180px;
@@ -113,6 +123,29 @@ This is where the vast majority of your CSS code goes. */
     border-radius: 20;
     margin-bottom: 30;
 }
+.butonlabelverde{
+    margin-top: 20;
+    text-align: center;
+    height: 45;
+    width: 200;
+    font-size: 13;
+    background-color: #207948;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
+}
+
+.butonlabelrojo{
+    margin-top: 20;
+    text-align: center;
+    height: 45;
+    width: 200;
+    font-size: 13;
+    background-color: #792020;
+    color: white;
+    border-radius: 20;
+    margin-bottom: 30;
+}
 
 .butonIr{
     height: 30;
@@ -143,7 +176,7 @@ This is where the vast majority of your CSS code goes. */
     margin-left: 10;
     margin-right: 10;
 }
-.rayaIntermedia2{
+.rayaIntermedia2 {
     height: 1.5;
     width: 100%;
     background-color: #B7B7B7;
