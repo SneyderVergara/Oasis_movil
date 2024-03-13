@@ -22,6 +22,9 @@ This is where the vast majority of your CSS code goes. */
 .text-medium{
     font-size: 22px;
 }
+.titulo{
+    color: white;
+}
 
 
 .texto_centrado{

@@ -12,55 +12,26 @@
             </FlexboxLayout>
 
             <FlexboxLayout class="blockEventos" flexDirection="column">
-                <FlexboxLayout class="cardEventos" flexDirection="column">
-                    <FlexboxLayout class="Info" flexDirection="column">
-                        <label class="Cabin titulo" text="Celebración del día de muertos"></label>
+                <FlexboxLayout class="cardEventos" flexDirection="column" *ngFor="let i of eventos">
+                    <FlexboxLayout class="headCardEventos">
+                        <FlexboxLayout class="Info" flexDirection="column">
+                            <label class="Cabin titulo" text="{{i.nombre}}"></label>
+                            <FlexboxLayout>
+                                <label class="far" id="calendario" text="&#xf133;"></label>
+                                <label class="Cabin fecha" text="{{i.fecha}}"></label>
+                            </FlexboxLayout>
+                        </FlexboxLayout> 
                         <FlexboxLayout>
-                            <label class="far" id="calendario" text="&#xf133;"></label>
-                            <label class="Cabin fecha" text="20 noviembre 2023"></label>
+                            <Image src="~/app/images/pencil.png" [nsRouterLink]="['info_evento', i.id]" width="40" borderRadius="10"></Image>
                         </FlexboxLayout>
-                    </FlexboxLayout> 
+                    </FlexboxLayout>
                     <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
                     <FlexboxLayout class="Imagen_Evento">
-                        <Image src="~/app/images/Dia_muertos.png"></Image>
+                        <Image src="{{i.foto}}"></Image>
                     </FlexboxLayout>
                     <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
                     <FlexboxLayout class="botonvermas">
-                        <label class="butonlabelrosa Cabin" (tap)="onVerMas()" text="Ver más"></label>
-                    </FlexboxLayout>
-                </FlexboxLayout>
-                <FlexboxLayout class="cardEventos" flexDirection="column">
-                    <FlexboxLayout class="Info" flexDirection="column">
-                        <label class="Cabin titulo" text="Noche de Halloween"></label>
-                        <FlexboxLayout>
-                            <label class="far" id="calendario" text="&#xf133;"></label>
-                            <label class="Cabin fecha" text="30 Octubre 2023"></label>
-                        </FlexboxLayout>
-                    </FlexboxLayout> 
-                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
-                    <FlexboxLayout class="Imagen_Evento">
-                        <Image src="~/app/images/halloween.jpg"></Image>
-                    </FlexboxLayout>
-                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
-                    <FlexboxLayout class="botonvermas">
-                        <label class="butonlabelrosa Cabin" (tap)="onVerMas()" text="Ver más"></label>
-                    </FlexboxLayout>
-                </FlexboxLayout>
-                <FlexboxLayout class="cardEventos" flexDirection="column">
-                    <FlexboxLayout class="Info" flexDirection="column">
-                        <label class="Cabin titulo" text="Noche de Jazz"></label>
-                        <FlexboxLayout>
-                            <label class="far" id="calendario" text="&#xf133;"></label>
-                            <label class="Cabin fecha" text="20 noviembre 2023"></label>
-                        </FlexboxLayout>
-                    </FlexboxLayout> 
-                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
-                    <FlexboxLayout class="Imagen_Evento">
-                        <Image src="~/app/images/noche_jazz.jpg"></Image>
-                    </FlexboxLayout>
-                    <FlexboxLayout class="rayaIntermedia2"></FlexboxLayout>
-                    <FlexboxLayout class="botonvermas">
-                        <label class="butonlabelrosa Cabin" (tap)="onVerMas()" text="Ver más"></label>
+                        <label class="butonlabelrosa Cabin" text="Ver más" [nsRouterLink]="['info_evento', i.id]"></label>
                     </FlexboxLayout>
                 </FlexboxLayout>
             </FlexboxLayout>

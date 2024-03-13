@@ -11,11 +11,11 @@ import { RegistroComponent } from "./components/registro/registro";
 
 
 export const appRoutes: any = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
   { path: "tienda", component: TiendaComponent },
   { path: "evento", component: EventoComponent },
-  { path: "info_evento", component: InfoEventoComponent },
+  { path: "evento/info_evento/:id", component: InfoEventoComponent },
   { path: "evento_carrito", component: EventoCarritoComponent },
   { path: "login", component: LoginComponent },
   { path: "perfil", component: PerfilComponent },

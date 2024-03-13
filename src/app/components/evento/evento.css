@@ -8,12 +8,19 @@
     border-radius: 20;
     margin-bottom: 20;
 }
-
-.cardEventos .Info{
+.headCardEventos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 15;
     margin-bottom: 15;
 }
-
+#lapizEdit{
+    background-color: transparent;
+    color: #fc4664;
+    font-size: small;
+    margin-right: 8;
+}
 .Info .titulo{
     font-size: 19;
     white-space: normal;
@@ -22,10 +29,13 @@
 
 .Imagen_Evento{
     padding: 15;
+    border-radius: 10;
+    height: 200;
 }
 
 .Imagen_Evento Image{
-    border-radius: 10;
+    stretch: fill;
+    height: auto;
 }
 
 .botonvermas{
